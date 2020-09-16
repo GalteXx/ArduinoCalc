@@ -34,7 +34,7 @@ digitalWrite(2, HIGH);
           digitalWrite(a, HIGH);
         }
         else digitalWrite (a, LOW);
-        t = t % 10;
+       t = t / 10;
         a++;
     }
 }
