@@ -9,16 +9,16 @@ void setup() {
 }
 
 void loop() {
-      int t = 0, d = 1;
+      long t = 0, d = 1;
 digitalWrite(2, HIGH);
   
   int a = 3;
-  int source = 0;
+  long source = 0;
   if (Serial.available() > 0)
   {
   source = Serial.readString().toInt();
   
-     
+     Serial.print(source);
     while (source > 0)
     {
         t += (source % 2) * d;
