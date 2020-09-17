@@ -33,6 +33,7 @@ void loop() {
   source = Serial.read();
   if( source > 47 && source <= 57)
   {
+  
   prihod = (prihod * 10) + (source - 48);
   source = 0;
   }
@@ -56,5 +57,13 @@ void loop() {
         else digitalWrite (a, LOW);
        t = t / 10;
         a++;
+    }
+
+    delay (5000);
+    a = 3;
+        while(a <= 11)
+    {
+      digitalWrite(a, LOW);
+      a++;
     }
 }
